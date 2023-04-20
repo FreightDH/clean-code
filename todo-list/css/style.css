@@ -38,19 +38,6 @@ button {
   background-color: inherit;
 }
 
-a {
-  color: inherit;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 ul li {
   list-style: none;
 }
@@ -67,4 +54,116 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+.header {
+  padding: 8px 0px 0px 0px;
+}
+.header__body {
+  width: 500px;
+  margin: 0 auto;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .header__body {
+    text-align: center;
+  }
+}
+.header__image img {
+  width: 100%;
+}
+.header__link {
+  font-family: fantasy, cursive;
+}
+
+.content {
+  width: 500px;
+  margin: 0px auto;
+  padding: 16px 0px 0px 0px;
+}
+.content__body {
+  padding: 30px 0;
+}
+.content__title {
+  display: block;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 2px solid #333;
+  color: #333;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.task__wrapper {
+  display: flex;
+  padding: 20px 0px 46px 0px;
+}
+.task__input {
+  display: none;
+  height: 21px;
+  padding: 0px 9px;
+  flex-grow: 1;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #888;
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+.task__input:focus {
+  color: #333;
+}
+.task__input.input--new {
+  display: inline-block;
+}
+.task__btn {
+  width: 60px;
+  cursor: pointer;
+  color: #888;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+}
+.task__btn:hover {
+  color: #3a3a3a;
+}
+.task__btn.btn--delete img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+.task__btn.btn--delete img:hover {
+  transform: rotateZ(0);
+}
+.task__name {
+  flex-grow: 1;
+  padding: 0px 0px 0px 10px;
+  font-size: 18px;
+}
+
+.list {
+  margin: 0px 0px 30px 0px;
+}
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.list__item.item--edit .task__input {
+  display: inline-block;
+}
+.list__item.item--edit .task__name {
+  display: none;
+}
+
+.name--complete {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.checkbox {
+  margin: 0 10px;
 }
