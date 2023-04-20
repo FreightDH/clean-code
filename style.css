@@ -41,10 +41,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
-input,button{
+input,
+button {
   outline: none;
 }
 .btn {
@@ -137,7 +139,8 @@ label[for="new-task"] {
 }
 
 /* Edit Task */
-.list .tasks-incomplete-item input[type=text],  .list .tasks-complete-item input[type=text] {
+.list .tasks-incomplete-item input[type=text],  
+.list .tasks-complete-item input[type=text] {
   display: none;
 }
 
