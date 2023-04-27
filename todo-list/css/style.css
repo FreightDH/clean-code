@@ -65,9 +65,11 @@ h6 {
   text-align: right;
 }
 @media (max-width: 768px) {
+	
 	.header__body {
     text-align: center;
   }
+	
 }
 .header__image img {
   width: 100%;
